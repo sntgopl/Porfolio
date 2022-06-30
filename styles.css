@@ -50,7 +50,28 @@
         border-radius: 2px;
     }
 
+    .headline {
+        position: absolute;
+        margin-top: 10vh;
+        margin-left: 24px;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        border: 2px solid salmon;
+        /* align-items: flex-start; */
+    }
 
+    h1 {
+        color:#FF6B00;
+        font-family: 'Crete Round', serif;
+        font-size: 56px;
+        line-height: 64px;
+        padding-top:120px;
+        font-weight: 400;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        letter-spacing: 0.37px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 
 
 
