@@ -192,11 +192,15 @@ p {
   padding: 0 24px;
   gap: 24px;
   margin-bottom: 120px;
+  background-image: url('images/projects/Cardworks.png');
+
 }
 
 .proyect1 {
   grid-row: 1/2;
-  background-image: url(images/projects/Cardworks.png);
+  grid-column: 1/2;
+  background-image: url('images/projects/Cardworks.png');
+  background-color: #ccc;
 }
 
 .projecthead {
@@ -237,39 +241,43 @@ p {
   color: #fff;
   width: 32px;
   height: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .projectbutton {
   width: 327px;
   height: 48px;
   background: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .proyect2 {
   grid-row: 2/3;
-  background-image: url(images/projects/Cardworks.png);
+  background-image: url('/images/projects/Cardworks.png');
 }
 
 .proyect3 {
   grid-row: 3/4;
-  background-image: url(images/projects/Cardworks.png);
-
+  background-image: url('images/projects/Cardworks.png');
 }
 
 .proyect4 {
   grid-row: 4/5;
-  background-image: url(images/projects/Cardworks.png);
-
+  background-image: url('images/projects/Cardworks.png');
 }
 
 .proyect5 {
   grid-row: 5/6;
-  background-image: url(images/projects/Cardworks.png);
-
+  background-image: url('images/projects/Cardworks.png');
 }
 
 .proyect6 {
   grid-row: 6/7;
-  background-image: url(images/projects/Cardworks.png);
-
+  background-image: url('images/projects/Cardworks.png');
 }
