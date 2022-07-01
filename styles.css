@@ -101,3 +101,76 @@ p {
   padding-bottom: 120px;
   padding-left: 0;
 }
+
+.works {
+  position: absolute;
+  margin-top: 638px;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: auto;
+  padding: 120px 24px 0 24px;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.introhead {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+}
+
+.introimg {
+  width: 327px;
+  height: 237px;
+  margin-top: 80px;
+}
+
+.introsubhead {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.introtext {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.langlist {
+  display: flex;
+  align-content: center;
+  gap: 12px;
+  width: 297px;
+  height: 40px;
+}
+
+.langitem {
+  width: 25px;
+  height: 20px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.introbutton {
+  background-color: #ff6b00;
+  height: 48px;
+  width: 124px;
+  padding: 12px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
