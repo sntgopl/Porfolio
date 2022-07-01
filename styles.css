@@ -192,15 +192,11 @@ p {
   padding: 0 24px;
   gap: 24px;
   margin-bottom: 120px;
-  background-image: url('images/projects/Cardworks.png');
-
 }
 
 .proyect1 {
   grid-row: 1/2;
-  grid-column: 1/2;
   background-image: url('images/projects/Cardworks.png');
-  background-color: #ccc;
 }
 
 .projecthead {
