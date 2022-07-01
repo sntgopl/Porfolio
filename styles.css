@@ -48,7 +48,6 @@ body {
   background-color: #1c1a19;
   background-image: url(images/Mobile-background/Headline.png);
   margin-top: 40px;
-  /* padding: 120px 24px; */
   display: flex;
   flex-direction: column;
   height: 590px;
@@ -57,7 +56,6 @@ body {
   align-items: left;
   justify-content: space-between;
 }
-
 
 h1 {
   order: 0;
