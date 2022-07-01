@@ -57,13 +57,13 @@ body {
 }
 
 .background {
-    position: absolute;
-    height: 312px;
-    width: 406px;
-    left: 228px;
-    top: 400px;
-    object-fit: cover;
-    overflow: hidden;
+  position: absolute;
+  height: 312px;
+  width: 406px;
+  left: 228px;
+  top: 400px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 h1 {
@@ -102,7 +102,7 @@ p {
   display: flex;
   justify-content: space-between;
   height: 30px;
-  width: 200px; 
+  width: 200px;
   list-style: none;
 }
 
