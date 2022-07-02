@@ -108,12 +108,16 @@ p {
   left: 0;
   display: flex;
   flex-direction: column;
-  width: 375px;
+  max-width: 375px;
   height: auto;
-  padding: 120px 24px 0 24px;
+  padding: 120px  24px 0 24px;
   justify-content: space-between;
   align-items: left;
   border: 2px solid red;
+}
+
+.intro {
+  max-width: 327px;
 }
 
 .introhead {
@@ -183,20 +187,24 @@ p {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
+  border: none;
 }
 
 .container {
   display: grid;
   grid-template-rows: repeat(6, 386px);
-  width: 375px;
-  padding: 0 24px;
-  gap: 24px;
+  width: 327px;
+  row-gap: 24px;
   margin-bottom: 120px;
+
 }
 
 .proyect1 {
   grid-row: 1/2;
-  background-image: url('images/projects/Cardworks.png');
+  background-image: url(images/projects/Cardworks.png);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 .projecthead {
@@ -223,6 +231,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
   gap: 12px;
   width: 236px;
@@ -275,5 +284,108 @@ p {
 
 .proyect6 {
   grid-row: 6/7;
-  background-image: url('images/projects/Cardworks.png');
+  grid-column: 1/2;
+  background-image: url(images/projects/Cardworks.png);
+  background-image: url(images/Mobile-background/Headline.png);
+
+}
+
+.aboutme {
+  position: absolute;
+  left: 0;
+  margin-top: 4155px;
+  width: 375px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding: 120px 0;
+  border: 2px solid green;
+  background-image: url(images/aboutme/Rectangle73.png);
+
+}
+
+.aboutmehead {
+  order: 0;
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  padding: 0 24px;
+}
+
+.aboutmedesc {
+  order: 1;
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding: 0 24px;
+}
+
+.aboutmebutton {
+  order: 2;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  width: 137px;
+  height: 48px;
+  background-color: #ff6b00;
+  align-self: left;
+  margin-left: 24px;
+  margin-bottom: 120px;
+  white-space: nowrap;
+}
+
+.line {
+  order: 3;
+  border: 0.1px solid white;
+  width: 327px;
+  align-self: center;
+}
+
+.skills {
+  padding-top: 120px;
+  order: 4;
+}
+
+.aboutmesub {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+}
+
+.skilllist {
+  font-family: 'InaiMathi';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.skillitem {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  text-align: center;
+  list-style: none;
+  align-self: center;
 }
