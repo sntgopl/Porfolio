@@ -401,7 +401,7 @@ p {
 }
 
 .skilllist {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -446,4 +446,5 @@ p {
   height: 18px;
   border-radius: 9px;
   background-color: #ff6b00;
-  display: inline-block;}
+  display: inline-block;
+}
