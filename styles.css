@@ -196,12 +196,12 @@ p {
   width: 327px;
   row-gap: 24px;
   margin-bottom: 120px;
-
 }
 
 .proyect1 {
   grid-row: 1/2;
-  background-image: url(images/projects/Cardworks.png);
+  grid-column: 1/2;
+  background: grey;
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -302,7 +302,7 @@ p {
   align-items: left;
   padding: 120px 0;
   border: 2px solid green;
-  background-image: url(images/aboutme/Rectangle73.png);
+  background-image: url(images/aboutme/Rectangle.png);
 
 }
 
@@ -346,13 +346,6 @@ p {
   margin-left: 24px;
   margin-bottom: 120px;
   white-space: nowrap;
-}
-
-.line {
-  order: 3;
-  border: 0.1px solid white;
-  width: 327px;
-  align-self: center;
 }
 
 .skills {
