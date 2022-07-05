@@ -527,7 +527,7 @@ p {
 .forms button:hover {
   transition: 0.25s;
   background-color: #fcc49b;
-  color:#ff6b00;
+  color: #ff6b00;
   text-shadow: none;
   border: 1px solid #ff6b00;
 }
