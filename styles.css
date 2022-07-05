@@ -455,7 +455,6 @@ p {
   width: 327px;
   left: 0;
   padding: 120px 24px;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -493,7 +492,7 @@ p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #979493;
+  color: rgb(202, 198, 198);
 }
 
 .forms form #msg {
@@ -507,7 +506,7 @@ p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #3c3a39;
+  color: rgb(202, 198, 198);
 }
 
 .forms button {
@@ -531,7 +530,30 @@ footer {
   width: 375px;
   left: 0;
   padding: 0;
-  border: 2px solid red;
+  border-style: none;
+  border-top-style: solid;
+  border-color: rgb(202, 198, 198);
+  border-width: 2px;
   display: flex;
   flex-direction: column;
+}
+
+footer .social-footer {
+  order: 0;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 200px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.rounded-line {
+  width: 134px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  align-self: center;
+  margin-bottom: 8px;
 }
