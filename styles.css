@@ -524,6 +524,29 @@ p {
   align-self: center;
 }
 
+.forms button:hover {
+  transition: 0.25s;
+  background-color: #fcc49b;
+  color:#ff6b00;
+  text-shadow: none;
+  border: 1px solid #ff6b00;
+}
+
+.forms button:disabled {
+  transition: 0.25s;
+  background-color: rgb(192, 192, 192);
+  color: rgb(92, 92, 92);
+  text-shadow: none;
+  border: 1px solid grey;
+}
+
+.forms button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  text-shadow: none;
+  border: 1px solid #ff6b00;
+}
+
 footer {
   position: absolute;
   margin-top: 7180px;
