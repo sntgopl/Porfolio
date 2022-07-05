@@ -448,3 +448,37 @@ p {
   background-color: #ff6b00;
   display: inline-block;
 }
+
+.forms {
+  position: absolute;
+  margin-top: 6300px;
+  width: 327px;
+  left: 0;
+  padding: 120px 24px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.forms h2 {
+  order: 0;
+  align-self: center;
+}
+
+.forms form {
+  order: 1;
+  align-self: left;
+  display: flex;
+  height: 330px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.forms form input {
+  justify-self: stretch;
+}
+
+.forms form #msg {
+  min-height: 114px;
+  max-width: 114px;
+}
