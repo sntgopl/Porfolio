@@ -448,3 +448,135 @@ p {
   background-color: #ff6b00;
   display: inline-block;
 }
+
+.forms {
+  position: absolute;
+  margin-top: 6300px;
+  width: 327px;
+  left: 0;
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forms h2 {
+  order: 0;
+  align-self: center;
+  margin-bottom: 58px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.forms form {
+  order: 1;
+  align-self: left;
+  display: flex;
+  height: 330px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.forms form input {
+  justify-self: stretch;
+  padding: 15px 16px;
+  height: 48px;
+  border-style: none;
+  border-bottom-style: solid;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(202, 198, 198);
+}
+
+.forms form #msg {
+  min-height: 114px;
+  max-height: 114px;
+  background-color: #fbf8f7;
+  border-style: none;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgb(202, 198, 198);
+}
+
+.forms button {
+  width: 131px;
+  height: 48px;
+  background-color: #ff6b00;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  align-self: center;
+}
+
+.forms button:hover {
+  transition: 0.25s;
+  background-color: #fcc49b;
+  color: #ff6b00;
+  text-shadow: none;
+  border: 1px solid #ff6b00;
+}
+
+.forms button:disabled {
+  transition: 0.25s;
+  background-color: rgb(192, 192, 192);
+  color: rgb(92, 92, 92);
+  text-shadow: none;
+  border: 1px solid grey;
+}
+
+.forms button:active {
+  background-color: #ff6b00;
+  color: #fff;
+  text-shadow: none;
+  border: 1px solid #ff6b00;
+}
+
+footer {
+  position: absolute;
+  margin-top: 7180px;
+  width: 375px;
+  left: 0;
+  padding: 0;
+  border-style: none;
+  border-top-style: solid;
+  border-color: rgb(202, 198, 198);
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .social-footer {
+  order: 0;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 200px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.rounded-line {
+  width: 134px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  align-self: center;
+  margin-bottom: 8px;
+}
