@@ -463,6 +463,14 @@ p {
 .forms h2 {
   order: 0;
   align-self: center;
+  margin-bottom: 58px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
 }
 
 .forms form {
@@ -476,9 +484,54 @@ p {
 
 .forms form input {
   justify-self: stretch;
+  padding: 15px 16px;
+  height: 48px;
+  border-style: none;
+  border-bottom-style: solid;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
 }
 
 .forms form #msg {
   min-height: 114px;
-  max-width: 114px;
+  max-height: 114px;
+  background-color: #FBF8F7;
+  border-style: none;
+  padding: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+.forms button {
+  width: 131px;
+  height: 48px;
+  background-color: #FF6B00;
+  padding: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  align-self: center;
+}
+
+footer {
+  position: absolute;
+  margin-top: 7180px;
+  width: 375px;
+  left: 0;
+  padding: 0;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 }
