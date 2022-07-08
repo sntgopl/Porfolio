@@ -218,7 +218,7 @@
     padding: 10px 12px;
   }
 
-  .intro button {
+  .intro .introbutton {
     background-color: #ff6b00;
     height: 48px;
     width: 124px;
@@ -259,7 +259,7 @@
     display: none;
   }
 
-  .project1 button {
+  .project1 .projectbutton {
     height: 48px;
   }
 
