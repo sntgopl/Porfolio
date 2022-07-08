@@ -1,26 +1,26 @@
 @media (min-width: 768px) {
   body {
-      display: grid;
-      grid-template-rows: 72px 800px auto auto 590px 72px;
-      grid-template-columns: 100vw;
-      top: 0;
-      max-width: 100vw;
-      height: auto;
-      overflow: visible;
-      margin: 0;
-      padding: 0;
-  }
+    display: grid;
+    grid-template-rows: 72px 800px auto auto 590px 72px;
+    grid-template-columns: 100vw;
+    top: 0;
+    max-width: 100vw;
+    height: auto;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+}
  
   .nav-bar {
-      grid-row: 1/2;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: 100vw;
-      height: 72px;
-      background: #3c3a39;
-  }
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 72px;
+    background: #3c3a39;
+}
 
   .logo {
     text-decoration: none;
