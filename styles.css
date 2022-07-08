@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 680px) {
 
 body {
   max-width: 375px;
@@ -130,6 +130,7 @@ p {
 }
 
 .introhead {
+  order: 0;
   width: 327px;
   height: 107px;
   font-family: 'Crete Round', serif;
@@ -138,6 +139,10 @@ p {
   line-height: 52px;
   color: #1c1a19;
   align-items: center;
+}
+
+.line {
+  display: none;
 }
 
 .introimg {
@@ -586,4 +591,9 @@ footer .social-footer {
   align-self: center;
   margin-bottom: 8px;
 }
+
+.nodisplaym {
+  display: none;
 }
+}
+
