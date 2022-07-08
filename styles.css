@@ -141,7 +141,10 @@
   }
 
   .line {
-    display: none;
+    order: 0;
+    width: 87.2vw;
+    height: 1px;
+    background-color: black;
   }
 
   .introimg {
