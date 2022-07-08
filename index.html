@@ -5,6 +5,7 @@
         <title>Personal Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style-desk.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;400;500;600;700&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
@@ -13,43 +14,54 @@
         <header class="nav-bar">
             <a class="logo" href="#">Snoplezik</a>
             <a class="hamburger" href="#"><div></div><div></div><div></div></a>
+            <ul class="nav-list">
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li><a href=""><img src="images/desk-nav-bar/Icon-Mail.png" alt="Mail"></a></li>
+            </ul>
         </header>
         <section class="headline">
-            <h1>Hey There.<br>I'm Santiago</h1>
-            <h2>I am a Software Developer</h2>
-            <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+            <div class="head">
+              <h1>Hey There.<br>I'm Santiago</h1>
+              <h2>I am a Software Developer</h2>
+              <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+            </div>
             <ul class="social">
                 <li><a href=""><img src="images/GitHub/Tertiary/Icons/Frame.png" alt="GitHub"></a></li>
-                <li><a href=""><img src="images/Twitter/Tertiary/Icons/Frame.png" alt="Twitter"></a></li>
-                <li><a href=""><img src="images/Peace/Tertiary/Icons/angelist1.png" alt="Peace"></a></li>
-                <li><a href=""><img src="images/M/Tertiary/Icons/Vector.png" alt="M"></a></li>
                 <li><a href=""><img src="images/Linkedin/Tertiary/Icons/Frame.png" alt="Linkedin"></a></li>
+                <li><a href=""><img src="images/Peace/Tertiary/Icons/angelist1.png" alt="Peace"></a></li>
+                <li><a href=""><img src="images/Twitter/Tertiary/Icons/Frame.png" alt="Twitter"></a></li>
+                <li><a href=""><img src="images/M/Tertiary/Icons/Vector.png" alt="M"></a></li>
             </ul>
         </section>
         <section class="works">
             <div class="intro">
                 <h2 class="introhead">My Recent Works</h2>
+                <div class="line"></div>
                 <img class="introimg" src="images/intro/introimg.png" alt="yoga">
-                <h3 class="introsubhead">Multi-Post Stories</h3>
-                <p class="introtext">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text.</p>
-                <ul class="langlist">
-                    <li class="langitem">css</li>
-                    <li class="langitem">html</li>
-                    <li class="langitem">bootstrap</li>
-                    <li class="langitem">Ruby</li>
-                </ul>
-                <button class="introbutton" type="button">See Project</button>
+                <div class="introinfo">
+                    <h3 class="introsubhead">Multi-Post Stories</h3>
+                    <p class="introtext">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standar dummy text.</p>
+                    <ul class="langlist">
+                        <li class="langitem">css</li>
+                        <li class="langitem">html</li>
+                        <li class="langitem">bootstrap</li>
+                        <li class="langitem">Ruby</li>
+                    </ul>
+                    <button class="introbutton btn" type="button">See Project</button>
+                </div>
             </div>
             <div class="container">
                 <div class="project1">
-                    <h3 class="projecthead">Professional Art Printing Data</h3>
-                    <p class="projectdesc">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
-                    <ul class="projectlist">
-                        <li class="projectlistitem">html</li>
-                        <li class="projectlistitem">bootstrap</li>
-                        <li class="projectlistitem">Ruby</li>
+                    <h3 class="projecthead nodisplay">Professional Art Printing Data</h3>
+                    <p class="projectdesc nodisplay">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
+                    <ul class="projectlist nodisplay">
+                        <li class="projectlistitem nodisplay">html</li>
+                        <li class="projectlistitem nodisplay">bootstrap</li>
+                        <li class="projectlistitem nodisplay">Ruby</li>
                     </ul>
-                    <button class="projectbutton" type="button">See Project</button>
+                    <button class="projectbutton btn" type="button">See Project</button>
                 </div>
                 <div class="project2">
                     <h3 class="projecthead">Professional Art Printing Data</h3>
@@ -59,7 +71,7 @@
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton" type="button">See Project</button>
+                    <button class="projectbutton btn nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project3">
                     <h3 class="projecthead">Professional Art Printing Data</h3>
@@ -69,7 +81,7 @@
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton" type="button">See Project</button>
+                    <button class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project4">
                     <h3 class="projecthead">Professional Art Printing Data</h3>
@@ -79,7 +91,7 @@
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton" type="button">See Project</button>
+                    <button class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project5">
                     <h3 class="projecthead">Professional Art Printing Data</h3>
@@ -89,7 +101,7 @@
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton" type="button">See Project</button>
+                    <button class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project6">
                     <h3 class="projecthead">Professional Art Printing Data</h3>
@@ -99,59 +111,69 @@
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton" type="button">See Project</button>
+                    <button class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
             </div>
         </section>
         <section class="aboutme">
-            <h2 class="aboutmehead">About me</h2>
-            <p class="aboutmedesc">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-            <button class="aboutmebutton" type="button">Get My Resume</button>
+            <div class="about">
+                <h2 class="aboutmehead">About me</h2>
+                <p class="aboutmedesc">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                <button class="aboutmebutton btn" type="button">Get My Resume</button>
+            </div>
             <div class="skills">
-                <span class="diamond"></span>
-                <h3 class="aboutmesub">Language</h3>
-                <ul class="skilllist">
-                    <li class="skillitem">Javascript</li>
-                    <li class="skillitem">Ruby</li>
-                    <li class="skillitem">Html</li>
-                    <li class="skillitem">Css</li>
-                </ul>
-                <span class="square"></span>
-                <h3 class="aboutmesub">Frameworks</h3>
-                <ul class="skilllist">
-                    <li class="skillitem">Bootstrap</li>
-                    <li class="skillitem">Ruby on Rails</li>
-                    <li class="skillitem">RSPec</li>
-                    <li class="skillitem">CapyBara</li>
-                    <li class="skillitem">Selenium</li>
-                </ul>
-                <span class="circle"></span>
-                <h3 class="aboutmesub">Skills</h3>
-                <ul class="skilllist">
-                    <li class="skillitem">Codekit</li>
-                    <li class="skillitem">Github</li>
-                    <li class="skillitem">Codepen</li>
-                    <li class="skillitem">Gitlab</li>
-                    <li class="skillitem">Terminal</li>
-                </ul>
+                <div class="language">
+                    <span class="diamond"></span>
+                    <h3 class="aboutmesub">Language</h3>
+                    <ul class="skilllist">
+                        <li class="skillitem">Javascript</li>
+                        <li class="skillitem">Ruby</li>
+                        <li class="skillitem">Html</li>
+                        <li class="skillitem">Css</li>
+                    </ul>
+                </div>
+                <div class="framework">
+                    <span class="square"></span>
+                    <h3 class="aboutmesub">Frameworks</h3>
+                    <ul class="skilllist">
+                        <li class="skillitem">Bootstrap</li>
+                        <li class="skillitem">Ruby on Rails</li>
+                        <li class="skillitem">RSPec</li>
+                        <li class="skillitem">CapyBara</li>
+                        <li class="skillitem">Selenium</li>
+                    </ul>
+                </div>
+                <div class="git">
+                    <span class="circle"></span>
+                    <h3 class="aboutmesub">Skills</h3>
+                    <ul class="skilllist">
+                        <li class="skillitem">Codekit</li>
+                        <li class="skillitem">Github</li>
+                        <li class="skillitem">Codepen</li>
+                        <li class="skillitem">Gitlab</li>
+                        <li class="skillitem">Terminal</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="forms">
-            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in </h2>
+            <h2 class="formhead">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form action="https://formspree.io/f/mgedjavk" method="post">
-                <input type="text" name="name" id="name" placeholder="Full name" required maxlength="30">
-                <input type="email" name="email" id="email" placeholder="Email address" required>
-                <textarea name="msg" id="msg" placeholder="Enter text here" required maxlength="500"></textarea>
-                <button type="submit">Get in touch</button>
+                <input class="nodisplay" type="text" name="fname" id="name" placeholder="Full name" required maxlength="30">
+                <input class="nodisplaym" type="text" name="ffirstname" id="firstname" placeholder="First name" required maxlength="30">
+                <input class="nodisplaym" type="text" name="flastname" id="lastname" placeholder="Last name" required maxlength="30">
+                <input type="email" name="femail" id="email" placeholder="Email address" required>
+                <textarea name="fmsg" id="msg" placeholder="Enter text here" required maxlength="500"></textarea>
+                <button class="btn formbutton" type="submit">Get in touch</button>
             </form>
         </section>
         <footer>
             <ul class="social-footer">
-                <li><a href=""><img src="images/GitHub/Tertiary/Icons/Frame.png" alt="GitHub"></a></li>
-                <li><a href=""><img src="images/Twitter/Tertiary/Icons/Frame.png" alt="Twitter"></a></li>
-                <li><a href=""><img src="images/Peace/Tertiary/Icons/angelist1.png" alt="Peace"></a></li>
-                <li><a href=""><img src="images/M/Tertiary/Icons/Vector.png" alt="M"></a></li>
-                <li><a href=""><img src="images/Linkedin/Tertiary/Icons/Frame.png" alt="Linkedin"></a></li>
+                <li><a href=""><img src="images/socials/github.png" alt="GitHub"></a></li>
+                <li><a href=""><img src="images/socials/linkedin.png" alt="Twitter"></a></li>
+                <li><a href=""><img src="images/socials/peace.png" alt="Peace"></a></li>
+                <li><a href=""><img src="images/socials/twitter.png" alt="M"></a></li>
+                <li><a href=""><img src="images/socials/M.png" alt="Linkedin"></a></li>
             </ul>
             <div class="rounded-line"></div>
         </footer>
