@@ -600,4 +600,14 @@
     text-shadow: none;
     border: 1px solid grey;
   }
+
+  .icon {
+    transition: width 2s ease-in, height 2ms ease-in, transform 0.5s ease-in-out;
+  }
+
+  .icon:hover {
+    width: 22px;
+    height: 20px;
+    transform: rotate(360deg);
+  }
 }
