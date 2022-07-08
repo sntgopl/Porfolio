@@ -11,22 +11,6 @@
     padding: 0;
   }
 
-  body button:hover {
-    transition: 0.25s;
-    background-color: #fcc49b;
-    color: #ff6b00;
-    text-shadow: none;
-    border: 1px solid #ff6b00;
-  }
-
-  body button:disabled {
-    transition: 0.25s;
-    background-color: rgb(192, 192, 192);
-    color: rgb(92, 92, 92);
-    text-shadow: none;
-    border: 1px solid grey;
-  }
-
   .nav-bar {
     grid-row: 1/2;
     display: flex;
@@ -420,7 +404,7 @@
     margin: 0;
   }
 
-  .aboutme .about button {
+  .aboutmebutton {
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -571,7 +555,7 @@
     color: rgb(202, 198, 198);
   }
 
-  .forms form .formbutton {
+  .formbutton {
     width: 131px;
     height: 48px;
     background-color: #ff6b00;
@@ -599,5 +583,21 @@
     margin: 24px 10vw;
     gap: 24px;
     list-style: none;
+  }
+
+  .btn:hover {
+    transition: 0.25s;
+    background-color: #fcc49b;
+    color: #ff6b00;
+    text-shadow: none;
+    border: 1px solid #ff6b00;
+  }
+
+  .btn:disabled {
+    transition: 0.25s;
+    background-color: rgb(192, 192, 192);
+    color: rgb(92, 92, 92);
+    text-shadow: none;
+    border: 1px solid grey;
   }
 }
