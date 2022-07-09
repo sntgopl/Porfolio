@@ -621,7 +621,8 @@
   }
 
   .form-shadow {
-    transition: box-shadow 1s ease-in, font-size 0.5s ease-out, height 0.5s ease-in-out, color 0.5s ease-in, transform 0.5s ease-in-out;}
+    transition: box-shadow 1s ease-in, font-size 0.5s ease-out, height 0.5s ease-in-out, color 0.5s ease-in, transform 0.5s ease-in-out;
+  }
 
   .form-shadow:hover {
     box-shadow: 5px 5px 10px rgb(180, 160, 141);
@@ -653,11 +654,25 @@
   }
 
   @keyframes logo-glow {
-    0% { font-size: 18px; color: white; }
-    25% { font-size: 22px; color: #f7a468 }
-    50% { font-size: 26px; color: #f86903 }
-    75% { font-size: 22px; color: #f7a468 }
-    100% { font-size: 18px; color: white }
+    0% {
+      font-size: 18px;
+      color: white;
+    }
+    25% {
+      font-size: 22px;
+      color: #f7a468
+    }
+    50% {
+      font-size: 26px;
+      color: #f86903
+    }
+    75% {
+      font-size: 22px;
+      color: #f7a468
+    }
+    100% {
+      font-size: 18px;
+      color: white
+    }
   }
-
 }
