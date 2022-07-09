@@ -646,4 +646,19 @@
     text-shadow: 2px 2px 3px rgb(176, 67, 4);
     transform: scale(1.1);
   }
+
+  .logo-animation {
+    animation-name: logo-glow;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes logo-glow {
+    0% {font-size: 18px; color: white;}
+    25% {font-size: 22px; color: #f7a468}
+    50% {font-size: 26px; color: #f86903}
+    75% {font-size: 22px; color: #f7a468}
+    100% {font-size: 18px; color: white}
+  }
+
 }
