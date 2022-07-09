@@ -612,20 +612,22 @@
   }
 
   .pro-shadow {
-    transition: box-shadow 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in, transform 1s ease-in-out;
   }
 
   .pro-shadow:hover {
     box-shadow: 10px 10px 10px rgb(92, 92, 92);
+    transform: scale(1.015);
   }
 
   .form-shadow {
-    transition: box-shadow 1s ease-in, font-size 0.5s ease-out, height 0.5s ease-in-out, color 0.5s ease-in; 
+    transition: box-shadow 1s ease-in, font-size 0.5s ease-out, height 0.5s ease-in-out, color 0.5s ease-in, transform 0.5s ease-in-out; 
   }
 
   .form-shadow:hover {
     box-shadow: 5px 5px 10px rgb(180, 160, 141);
     height: 55px;
+    transform: translate(10px);
   }
 
   .form-shadow:focus {
@@ -633,5 +635,6 @@
     font-size: 17px;
     height: 55px;
     color: black;
+    transform: translate(5px);
   }
 }
