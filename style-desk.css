@@ -637,4 +637,13 @@
     color: black;
     transform: translate(5px);
   }
+
+  .head-bang {
+    transition: text-shadow 1s ease-in, transform 1s ease-in-out;
+  }
+
+  .head-bang:hover {
+    text-shadow: 2px 2px 3px rgb(176, 67, 4);
+    transform: scale(1.1);
+  }
 }
