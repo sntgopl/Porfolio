@@ -658,21 +658,25 @@
       font-size: 18px;
       color: white;
     }
+
     25% {
       font-size: 22px;
-      color: #f7a468
+      color: #f7a468;
     }
+
     50% {
       font-size: 26px;
-      color: #f86903
+      color: #f86903;
     }
+
     75% {
       font-size: 22px;
-      color: #f7a468
+      color: #f7a468;
     }
+    
     100% {
       font-size: 18px;
-      color: white
+      color: white;
     }
   }
 }
