@@ -600,4 +600,83 @@
     text-shadow: none;
     border: 1px solid grey;
   }
+
+  .icon {
+    transition: width 2s ease-in, height 2ms ease-in, transform 0.5s ease-in-out;
+  }
+
+  .icon:hover {
+    width: 22px;
+    height: 20px;
+    transform: rotate(360deg);
+  }
+
+  .pro-shadow {
+    transition: box-shadow 0.3s ease-in, transform 1s ease-in-out;
+  }
+
+  .pro-shadow:hover {
+    box-shadow: 10px 10px 10px rgb(92, 92, 92);
+    transform: scale(1.015);
+  }
+
+  .form-shadow {
+    transition: box-shadow 1s ease-in, font-size 0.5s ease-out, height 0.5s ease-in-out, color 0.5s ease-in, transform 0.5s ease-in-out;
+  }
+
+  .form-shadow:hover {
+    box-shadow: 5px 5px 10px rgb(180, 160, 141);
+    height: 55px;
+    transform: translate(10px);
+  }
+
+  .form-shadow:focus {
+    box-shadow: 5px 5px 10px rgb(180, 160, 141);
+    font-size: 17px;
+    height: 55px;
+    color: black;
+    transform: translate(5px);
+  }
+
+  .head-bang {
+    transition: text-shadow 1s ease-in, transform 1s ease-in-out;
+  }
+
+  .head-bang:hover {
+    text-shadow: 2px 2px 3px rgb(176, 67, 4);
+    transform: scale(1.1);
+  }
+
+  .logo-animation {
+    animation-name: logo-glow;
+    animation-duration: 8s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes logo-glow {
+    0% {
+      font-size: 18px;
+      color: white;
+    }
+
+    25% {
+      font-size: 22px;
+      color: #f7a468;
+    }
+
+    50% {
+      font-size: 26px;
+      color: #f86903;
+    }
+
+    75% {
+      font-size: 22px;
+      color: #f7a468;
+    }
+
+    100% {
+      font-size: 18px;
+      color: white;
+    }
+  }
 }
