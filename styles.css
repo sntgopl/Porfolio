@@ -631,16 +631,17 @@
 
   #menuList li {
     border-bottom: 2px solid #6f6c6b;
-    padding: 12px;
     transition: all 0.5s ease-out;
   }
 
   #menuList li a {
+    padding: 12px;
     color: #fff5e1;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     width: 100%;
+    display: block;
   }
 
   #menuList li:hover {
