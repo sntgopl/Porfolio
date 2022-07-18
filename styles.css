@@ -538,7 +538,7 @@
     line-height: 24px;
     color: #fff;
     border: none;
-    align-self: center; 
+    align-self: center;
   }
 
   .forms button:hover {
@@ -625,7 +625,7 @@
 
   #menuList {
     list-style: none;
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
     margin: 24px;
   }
 
@@ -647,7 +647,7 @@
   #menuList li:hover {
     background-color: #ff6b00;
   }
-  
+
   #closeButton {
     margin-left: 295px;
     margin-top: 60px;
@@ -664,6 +664,7 @@
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -673,9 +674,9 @@
     from {
       opacity: 1;
     }
+
     to {
       opacity: 0;
     }
   }
-
 }
