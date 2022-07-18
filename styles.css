@@ -8,6 +8,10 @@
     text-shadow: 1px 1px 3px black;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   .nav-bar {
     position: absolute;
     top: 0;
@@ -34,7 +38,7 @@
     display: none;
   }
 
-  .hamburger {
+  #hamburger {
     height: 18px;
     margin-right: 24px;
     justify-self: flex-end;
@@ -43,7 +47,7 @@
     justify-content: space-between;
   }
 
-  .hamburger div {
+  #hamburger div {
     background-color: white;
     width: 18px;
     height: 1px;
@@ -538,7 +542,7 @@
   }
 
   .forms button:hover {
-    transition: 0.25s;
+    transition: all 0.5s ease-out;
     background-color: #fcc49b;
     color: #ff6b00;
     text-shadow: none;
@@ -596,5 +600,83 @@
 
   .nodisplaym {
     display: none;
+  }
+
+  #menuModal {
+    background-color: #3c3a39;
+    position: fixed;
+    width: 375px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: none;
+    z-index: 6;
+  }
+
+  .close-smooth {
+    animation: menu-smooth-disa;
+    animation-duration: 0.5s;
+  }
+
+  .open-smooth {
+    animation-name: menu-smooth;
+    animation-duration: 0.5s;
+  }
+
+  #menuList {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 24px;
+  }
+
+  #menuList li {
+    border-bottom: 2px solid #6f6c6b;
+    transition: all 0.5s ease-out;
+  }
+
+  #menuList li a {
+    padding: 12px;
+    color: #fff5e1;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    display: block;
+  }
+
+  #menuList li:hover {
+    background-color: #ff6b00;
+  }
+
+  #closeButton {
+    margin-left: 295px;
+    margin-top: 60px;
+    color: #67798e;
+    transition: all 0.5s ease-out;
+  }
+
+  #closeButton:hover {
+    transform: scale(1.2);
+    color: #ff6b00;
+  }
+
+  @keyframes menu-smooth {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes menu-smooth-disa {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
   }
 }
