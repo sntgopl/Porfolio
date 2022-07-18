@@ -34,7 +34,7 @@
     display: none;
   }
 
-  .hamburger {
+  #hamburger {
     height: 18px;
     margin-right: 24px;
     justify-self: flex-end;
@@ -43,7 +43,7 @@
     justify-content: space-between;
   }
 
-  .hamburger div {
+  #hamburger div {
     background-color: white;
     width: 18px;
     height: 1px;
@@ -596,5 +596,16 @@
 
   .nodisplaym {
     display: none;
+  }
+
+  #menuModal {
+    background-color: #3c3a39;
+    position: absolute;
+    width: 375px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: none;
+    z-index: 6;
   }
 }
