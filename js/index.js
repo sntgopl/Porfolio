@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('#hamburger');
   const closeButton = document.querySelector('#closeButton');
   const listOption = document.querySelector('#menuList');
+  const workButton = document.querySelector('#workSeeBtn');
+  const projectPup = document.querySelector('#popUp');
+  const projectButton1 = document.querySelector('#projectBtn1');
+  const pupClose = document.querySelector('#popUpCloseButton');
 
   hamburger.addEventListener('click', () => {
     modal.classList.add('open-smooth');
@@ -22,5 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   listOption.addEventListener('click', () => {
     modal.style.display = 'none';
+  });
+
+  workButton.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
+  projectButton1.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
+  pupClose.addEventListener('click', () => {
+    projectPup.style.display = 'none';
   });
 });

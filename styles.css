@@ -689,6 +689,7 @@
     background-color: rgba(86, 84, 84, 0.94);
     display: flex;
     flex-direction: column;
+    display: none;
   }
 
   #popUpChild {
