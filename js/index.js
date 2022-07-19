@@ -7,51 +7,63 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectPup = document.querySelector('#popUp');
   const projectButton1 = document.querySelector('#projectBtn1');
   const pupClose = document.querySelector('#popUpCloseButton');
+  const pTitle = document.querySelector('#popUpTitle');
+  const pTech1 = document.querySelector('#popUpTech1');
+  const pTech2 = document.querySelector('#popUpTech2');
+  const pTech3 = document.querySelector('#popUpTech3');
+  const pTech4 = document.querySelector('#popUpTech4');
+  const pImg = document.querySelector('#popUpImg');
+  const pTxt = document.querySelector('#popUpDesc');
+  const pBtnLive = document.querySelector('#popUpLive');
+  const pBtnSource = document.querySelector('#popUpSource');
+
+
+
 
   const arrProjects = [
-    {'name': 'Project one',
+    {'name': 'Multi-Post Stories',
      'description': 'this is the project one',
      'img':'images/projects/projects16',
      'technologies':['html', 'Bootstrap', 'Ruby and Race'],
      'linkToLive': 'https://github.com/sntgopl/sntgopl.github.io',
      'linkToSource': 'https://github.com/sntgopl/Porfolio'
     },
-    {'name': 'Project Two',
+    {'name': 'Professional Art Printing Data',
      'description': 'this is the project Two',
      'img':'images/projects/projects16',
      'technologies':['html', 'Bootstrap', 'Ruby and Race'],
      'linkToLive': 'https://github.com/sntgopl/sntgopl.github.io',
      'linkToSource': 'https://github.com/sntgopl/Porfolio'
     },
-    {'name': 'Project Three',
+    {'name': 'Data Dashboard Healthcare',
     'description': 'this is the project Three',
     'img':'images/projects/projects16',
     'technologies':['html', 'Bootstrap', 'Ruby and Race'],
     'linkToLive': 'https://github.com/sntgopl/sntgopl.github.io',
     'linkToSource': 'https://github.com/sntgopl/Porfolio'
    },
-   {'name': 'Project Fourth',
+   {'name': 'Website Protfolio',
     'description': 'this is the project Fourth',
     'img':'images/projects/projects16',
     'technologies':['html', 'Bootstrap', 'Ruby and Race'],
     'linkToLive': 'https://github.com/sntgopl/sntgopl.github.io',
     'linkToSource': 'https://github.com/sntgopl/Porfolio'
   },
-  {'name': 'Project five',
+  {'name': 'Profesional Art Printing Data More',
     'description': 'this is the project five',
     'img':'images/projects/projects16',
     'technologies':['html', 'Bootstrap', 'Ruby and Race'],
     'linkToLive': 'https://github.com/sntgopl/sntgopl.github.io',
     'linkToSource': 'https://github.com/sntgopl/Porfolio'
   },
-  {'name': 'Project six',
+  {'name': 'Data Dashboard Healthcare',
    'description': 'this is the project six',
    'img':'images/projects/projects16',
    'technologies':['html', 'Bootstrap', 'Ruby and Race'],
    'linkToLive': 'https://github.com/sntgopl/sntgopl.github.io',
    'linkToSource': 'https://github.com/sntgopl/Porfolio'
   },
-  {'name': 'Project seven',
+  {'name': 'Website Protfolio',
    'description': 'this is the project seven',
    'img':'images/projects/projects16',
    'technologies':['html', 'Bootstrap', 'Ruby and Race'],
@@ -82,11 +94,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   workButton.addEventListener('click', () => {
     projectPup.style.display = 'flex';
+    
   });
 
   projectButton1.addEventListener('click', () => {
     projectPup.style.display = 'flex';
   });
+
+  projectButton2.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
+  projectButton3.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
+  projectButton4.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
+  projectButton5.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
+  projectButton6.addEventListener('click', () => {
+    projectPup.style.display = 'flex';
+  });
+
 
   pupClose.addEventListener('click', () => {
     projectPup.style.display = 'none';
