@@ -28,7 +28,7 @@
             <div class="head">
               <h1 class="head-bang">Hey There.<br>I'm Santiago</h1>
               <h2>I am a Software Developer</h2>
-              <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+              <p class="headtext">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             </div>
             <ul class="social">
                 <li><a href=""><img class ="icon" src="images/GitHub/Tertiary/Icons/Frame.png" alt="GitHub"></a></li>
@@ -52,7 +52,7 @@
                         <li class="langitem">bootstrap</li>
                         <li class="langitem">Ruby</li>
                     </ul>
-                    <button class="introbutton btn" type="button">See Project</button>
+                    <button id="workSeeBtn" class="introbutton btn" type="button">See Project</button>
                 </div>
             </div>
             <div class="container">
@@ -64,57 +64,57 @@
                         <li class="projectlistitem nodisplay">bootstrap</li>
                         <li class="projectlistitem nodisplay">Ruby</li>
                     </ul>
-                    <button class="projectbutton btn" type="button">See Project</button>
+                    <button id="projectBtn1" class="projectbutton btn" type="button">See Project</button>
                 </div>
                 <div class="project2 pro-shadow">
-                    <h3 class="projecthead">Professional Art Printing Data</h3>
+                    <h3 class="projecthead">Data Dashboard Healthcare</h3>
                     <p class="projectdesc">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
                     <ul class="projectlist">
                         <li class="projectlistitem">html</li>
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton btn nodisplay" type="button">See Project</button>
+                    <button id="projectBtn2" class="projectbutton btn nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project3 pro-shadow">
-                    <h3 class="projecthead">Professional Art Printing Data</h3>
+                    <h3 class="projecthead">Website Protfolio</h3>
                     <p class="projectdesc">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
                     <ul class="projectlist">
                         <li class="projectlistitem">html</li>
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton nodisplay" type="button">See Project</button>
+                    <button id="projectBtn3" class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project4 pro-shadow">
-                    <h3 class="projecthead">Professional Art Printing Data</h3>
+                    <h3 class="projecthead">Profesional Art Printing Data More</h3>
                     <p class="projectdesc">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
                     <ul class="projectlist">
                         <li class="projectlistitem">html</li>
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton nodisplay" type="button">See Project</button>
+                    <button id="projectBtn4" class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project5 pro-shadow">
-                    <h3 class="projecthead">Professional Art Printing Data</h3>
+                    <h3 class="projecthead">Data Dashboard Healthcare</h3>
                     <p class="projectdesc">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
                     <ul class="projectlist">
                         <li class="projectlistitem">html</li>
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton nodisplay" type="button">See Project</button>
+                    <button id="projectBtn5" class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
                 <div class="project6 pro-shadow">
-                    <h3 class="projecthead">Professional Art Printing Data</h3>
+                    <h3 class="projecthead">Website Protfolio</h3>
                     <p class="projectdesc">A daily selection of privately personalized reads; no accounts or sign-ups required, has been the industry's standard</p>
                     <ul class="projectlist">
                         <li class="projectlistitem">html</li>
                         <li class="projectlistitem">bootstrap</li>
                         <li class="projectlistitem">Ruby</li>
                     </ul>
-                    <button class="projectbutton nodisplay" type="button">See Project</button>
+                    <button id="projectBtn6" class="projectbutton nodisplay" type="button">See Project</button>
                 </div>
             </div>
         </section>
@@ -124,6 +124,7 @@
                 <p class="aboutmedesc">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
                 <button class="aboutmebutton btn" type="button">Get My Resume</button>
             </div>
+            <div class="lineAboutme"></div>
             <div class="skills">
                 <div class="language">
                     <span class="diamond"></span>
@@ -180,13 +181,35 @@
             </ul>
             <div class="rounded-line"></div>
         </footer>
-        <div id="menuModal">
+        <div id="menuModal" class="nodisplay">
             <i id="closeButton" class="fa-solid fa-xmark fa-lg"></i>
             <ul id="menuList">
                 <li><a href="#workSection">Portfolio</a></li>
                 <li><a href="#aboutSection">About</a></li>
                 <li><a href="#contactSection">Contact</a></li>
             </ul>
+        </div>
+        <div id="popUp">
+            <div id="popUpChild">
+                <i id="popUpCloseButton" class="fa-solid fa-xmark fa-lg"></i>
+                <h2 id="popUpTitle">Keeping track of hundreds  of components website</h2>
+                <ul id="popUpList">
+                    <li id="popUpTech1" class="pLiOp">html</li>
+                    <li id="popUpTech2" class="pLiOp">Bootstrap</li>
+                    <li id="popUpTech3" class="pLiOp">Ruby on rails</li>
+                </ul>
+                <div id="popUpContent">
+                    <img id="popUpImg" src="images/intro/introimg.png" alt="project image">
+                    <div id="popUpText">
+                        <p id="popUpDesc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+                        <div id="popUpButtons">
+                            <a id="popUpLive" class="popUpBtn" href="#">See Live   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a id="popUpSource" class="popUpBtn" href="#">See Source   <i class="fa-brands fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </body>
 
