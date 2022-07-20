@@ -796,4 +796,17 @@
     text-shadow: none;
     border: 1px solid #ff6b00;
   }
+
+  .error { 
+    width: 100%;
+    font-size: 80%;
+    color: white;
+    background-color: #f52d00;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .active {
+    padding: 5px;
+  }
 }

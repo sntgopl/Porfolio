@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const pBtnLive = document.querySelector('#popUpLive');
   const pBtnSource = document.querySelector('#popUpSource');
   const pList = document.querySelector('#popUpList');
+  const form = document.querySelector('#formV');
+  const email = document.querySelector('#email');
+  const emailError = document.querySelector('#email + span.error');
 
   const arrProjects = [
     {
@@ -152,4 +155,23 @@ document.addEventListener('DOMContentLoaded', () => {
   popClose.addEventListener('click', () => {
     projectPup.style.display = 'none';
   });
+
+  function showError(input) {
+    let lower = input.toLowerCase();
+    
+    if(lower != input){
+      return false;
+      emailError.textContent = 'Input value must be in lower case';
+      emailError.className = 'error active';
+    }
+    else if(lower == input) {
+      return true;
+      emailError.textContent = '';
+      emailError.className = 'error';
+    }
+  }
+
+  email.addEventListener ('input', showError(email.value));
+
+  form.addEventListener('submit', showError(email.value));
 });

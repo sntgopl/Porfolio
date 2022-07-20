@@ -162,13 +162,14 @@
         </section>
         <section id="contactSection" class="forms">
             <h2 class="formhead">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form action="https://formspree.io/f/mgedjavk" method="post">
+            <form id="formV" action="https://formspree.io/f/mgedjavk" method="post" novalidate>
                 <input class="nodisplay" type="text" name="fname" id="name" placeholder="Full name" required maxlength="30">
                 <input class="nodisplaym form-shadow" type="text" name="ffirstname" id="firstname" placeholder="First name" required maxlength="30">
                 <input class="nodisplaym form-shadow" type="text" name="flastname" id="lastname" placeholder="Last name" required maxlength="30">
                 <input class="form-shadow" type="email" name="femail" id="email" placeholder="Email address" required>
                 <textarea class="form-shadow" name="fmsg" id="msg" placeholder="Enter text here" required maxlength="500"></textarea>
                 <button class="btn formbutton" type="submit">Get in touch</button>
+                <span class="error" aria-live="polite"></span>
             </form>
         </section>
         <footer>
