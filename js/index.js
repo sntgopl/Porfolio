@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pList = document.querySelector('#popUpList');
   const form = document.querySelector('#formV');
   const email = document.querySelector('#email');
-  const emailError = document.querySelector('#email + span.error');
+  const emailError = document.querySelector('.error');
 
   const arrProjects = [
     {
@@ -158,20 +158,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showError(input) {
     let lower = input.toLowerCase();
+    console.log(input, lower);
     
     if(lower != input){
-      return false;
       emailError.textContent = 'Input value must be in lower case';
       emailError.className = 'error active';
+      return false;
     }
     else if(lower == input) {
-      return true;
+      form.submit();
       emailError.textContent = '';
       emailError.className = 'error';
+      return true;
     }
   }
 
-  email.addEventListener ('input', showError(email.value));
+  email.addEventListener('input',() =>{
+    showError(email.value);
+  });
 
-  form.addEventListener('submit', showError(email.value));
+  form.addEventListener('submit', (event)=> {
+    event.preventDefault();
+    showError(email.value);
+  });
 });
