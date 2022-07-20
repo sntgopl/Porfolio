@@ -13,17 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectButton6 = document.querySelector('#projectBtn6');
   const popClose = document.querySelector('#popUpCloseButton');
   const pTitle = document.querySelector('#popUpTitle');
-  const pTech1 = document.querySelector('#popUpTech1');
-  const pTech2 = document.querySelector('#popUpTech2');
-  const pTech3 = document.querySelector('#popUpTech3');
-  const pTech4 = document.querySelector('#popUpTech4');
   const pImg = document.querySelector('#popUpImg');
   const pTxt = document.querySelector('#popUpDesc');
   const pBtnLive = document.querySelector('#popUpLive');
   const pBtnSource = document.querySelector('#popUpSource');
   const pList = document.querySelector('#popUpList');
-
-
 
   const arrProjects = [
     {
@@ -32,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/intro/introimg.png',
       technologies: ['html', 'Bootstrap', 'Ruby on rails', 'css'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
     },
     {
       name: 'Professional Art Printing Data',
@@ -40,23 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/intro/workimg.png',
       technologies: ['html', 'Bootstrap', 'Ruby on rails'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
     },
     {
       name: 'Data Dashboard Healthcare',
       description: 'This is Project Number 3: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
       img: 'images/intro/introimg.png',
-      technologies: ['html', 'Bootstrap', 'Ruby on rails',],
+      technologies: ['html', 'Bootstrap', 'Ruby on rails'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
-   },
-   {
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
+    },
+    {
       name: 'Website Protfolio',
       description: 'This is Project Number 4: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
       img: 'images/intro/workimg.png',
       technologies: ['html', 'Bootstrap', 'Ruby on rails', 'python'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
     },
     {
       name: 'Profesional Art Printing Data More',
@@ -64,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/intro/introimg.png',
       technologies: ['html', 'Bootstrap', 'Ruby on rails'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
     },
     {
       name: 'Data Dashboard Healthcare',
@@ -72,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/intro/workimg.png',
       technologies: ['html', 'Bootstrap', 'Ruby on rails', 'css'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
     },
     {
       name: 'Website Protfolio',
@@ -80,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/intro/introimg.png',
       technologies: ['html', 'Bootstrap', 'Ruby on rails'],
       linkToLive: 'https://sntgopl.github.io/',
-      linkToSource: 'https://github.com/sntgopl/Porfolio'
-    }    
+      linkToSource: 'https://github.com/sntgopl/Porfolio',
+    },
   ];
 
   hamburger.addEventListener('click', () => {
@@ -104,58 +98,58 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.style.display = 'none';
   });
 
-  function popUpFiller (num, arr){
-    let project = arr[num];
+  function popUpFiller(num, arr) {
+    const project = arr[num];
     pTitle.innerHTML = project.name;
     pTxt.innerHTML = project.description;
     pImg.src = project.img;
     pBtnLive.attributes.href.nodeValue = project.linkToLive;
     pBtnSource.attributes.href.nodeValue = project.linkToSource;
     pList.innerHTML = '';
-    project.technologies.forEach(item => {
+    project.technologies.forEach((item) => {
       const pLiPlus = document.createElement('li');
       pLiPlus.innerHTML = item;
       pLiPlus.classList.add('pLiOp1');
       pList.append(pLiPlus);
     });
-  };
+  }
 
   workButton.addEventListener('click', () => {
     projectPup.style.display = 'flex';
-    popUpFiller(0, arrProjects)
+    popUpFiller(0, arrProjects);
   });
-  
+
   projectButton1.addEventListener('click', () => {
     projectPup.style.display = 'flex';
     popUpFiller(1, arrProjects);
-    });
-  
+  });
+
   projectButton2.addEventListener('click', () => {
     projectPup.style.display = 'flex';
     popUpFiller(2, arrProjects);
-    });
-  
+  });
+
   projectButton3.addEventListener('click', () => {
     projectPup.style.display = 'flex';
     popUpFiller(3, arrProjects);
-    });
-  
+  });
+
   projectButton4.addEventListener('click', () => {
     projectPup.style.display = 'flex';
     popUpFiller(4, arrProjects);
-    });
-  
+  });
+
   projectButton5.addEventListener('click', () => {
     projectPup.style.display = 'flex';
     popUpFiller(5, arrProjects);
-    });
-  
+  });
+
   projectButton6.addEventListener('click', () => {
     projectPup.style.display = 'flex';
     popUpFiller(6, arrProjects);
-    });
-    
+  });
+
   popClose.addEventListener('click', () => {
     projectPup.style.display = 'none';
-    });
+  });
 });
