@@ -210,6 +210,14 @@
     border: none;
   }
 
+  .introbutton:hover {
+    transition: all 0.5s ease-out;
+    background-color: #fcc49b;
+    color: #ff6b00;
+    text-shadow: none;
+    border: 1px solid #ff6b00;
+  }
+
   .container {
     display: grid;
     grid-template-rows: repeat(6, 386px);
@@ -292,6 +300,14 @@
     letter-spacing: 0.03em;
     text-align: center;
     border: none;
+  }
+
+  .projectbutton:hover {
+    transition: all 0.5s ease-out;
+    background-color: #fcc49b;
+    color: #ff6b00;
+    text-shadow: none;
+    border: 1px solid #ff6b00;
   }
 
   .project2 {
@@ -399,6 +415,14 @@
     margin-bottom: 120px;
     white-space: nowrap;
     border: none;
+  }
+
+  .aboutmebutton:hover {
+    transition: all 0.5s ease-out;
+    background-color: #fcc49b;
+    color: #ff6b00;
+    text-shadow: none;
+    border: 1px solid #ff6b00;
   }
 
   .skills {
@@ -714,7 +738,7 @@
     margin-bottom: 40px;
   }
 
-  #popUpChild ul {
+  #popUpList {
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -722,7 +746,16 @@
     list-style: none;
   }
 
-  #popUpChild ul li {
+  .pLiOp {
+    border: 2px solid grey;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3c3a39;
+  }
+  
+  .pLiOp1 {
     border: 2px solid grey;
     padding: 12px;
     font-family: 'Poppins', sans-serif;
@@ -745,7 +778,7 @@
     line-height: 24px;
   }
 
-  #popUpButtons button {
+  #popUpButtons a {
     border: none;
     height: 48px;
     padding: 12px;
@@ -756,5 +789,14 @@
     font-weight: 700;
     line-height: 24px;
     margin: 0 9px;
+    text-decoration: none;
+  }
+
+  #popUpButtons a:hover {
+    transition: all 0.5s ease-out;
+    background-color: #fcc49b;
+    color: #ff6b00;
+    text-shadow: none;
+    border: 1px solid #ff6b00;
   }
 }
