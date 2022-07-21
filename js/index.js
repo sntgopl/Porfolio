@@ -207,6 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const comment = document.querySelector('#msg');
 
   firstName.addEventListener('input', () => {
+    populateStorage();
+    console.log('the data retreived is: ',localStorage.getItem('fname'));
   });
 
   lastName.addEventListener('input', () => {
@@ -229,9 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   //Form completing with storage information
   function getFromStorage() {
-    firstName = localStorage.getItem('fname');
-    lastName = localStorage.getItem('lname');
-    email = localStorage.getItem('mail');
-    comment = localStorage.getItem('msg');
-  }
+    firstName.value = localStorage.getItem('fname');
+    lastName.value = localStorage.getItem('lname');
+    email.value = localStorage.getItem('mail');
+    comment.value = localStorage.getItem('msg');
+  };
+
+  getFromStorage();
 });
