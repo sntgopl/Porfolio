@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lower === input) {
       emailError.innerText = 'Thank you for your submit';
       emailError.className = 'alert success';
-
       setTimeout(() => {
         form.submit();
       },
@@ -193,49 +192,49 @@ document.addEventListener('DOMContentLoaded', () => {
     showError(email.value);
   });
 
-  //Local-Storage
-  //declaring new variables
-  let storage = [{
-    'fname': '',
-    'lname': '',
-    'mail': '',
-    'msg': '',
-  }]
+  // Local-Storage
+  // declaring new variables
+  // const storage = [{
+  //   fname: '',
+  //   lname: '',
+  //   mail: '',
+  //   msg: '',
+  // }];
 
   const firstName = document.querySelector('#firstname');
   const lastName = document.querySelector('#lastname');
   const comment = document.querySelector('#msg');
 
-  firstName.addEventListener('input', () => {
-    populateStorage();
-    console.log('the data retreived is: ',localStorage.getItem('fname'));
-  });
-
-  lastName.addEventListener('input', () => {
-  });
-
-  comment.addEventListener('input', () => {
-
-  });
-
-  email.addEventListener('input', () => {
-    
-  })
-
-  //Form information storing function
+  // Form information storing function
   function populateStorage() {
-    localStorage.setItem('fname',firstName.value);
-    localStorage.setItem('lname',lastName.value);
-    localStorage.setItem('mail',email.value);
-    localStorage.setItem('msg',comment.value);
+    localStorage.setItem('fname', firstName.value);
+    localStorage.setItem('lname', lastName.value);
+    localStorage.setItem('mail', email.value);
+    localStorage.setItem('msg', comment.value);
   }
-  //Form completing with storage information
+  // Form completing with storage information
   function getFromStorage() {
     firstName.value = localStorage.getItem('fname');
     lastName.value = localStorage.getItem('lname');
     email.value = localStorage.getItem('mail');
     comment.value = localStorage.getItem('msg');
-  };
+  }
 
   getFromStorage();
+
+  firstName.addEventListener('input', () => {
+    populateStorage();
+  });
+
+  lastName.addEventListener('input', () => {
+    populateStorage();
+  });
+
+  comment.addEventListener('input', () => {
+    populateStorage();
+  });
+
+  email.addEventListener('input', () => {
+    populateStorage();
+  });
 });
