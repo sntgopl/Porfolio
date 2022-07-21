@@ -192,34 +192,42 @@ document.addEventListener('DOMContentLoaded', () => {
     showError(email.value);
   });
 
-  // Local-Storage
-  // declaring new variables
-  // const storage = [{
-  //   fname: '',
-  //   lname: '',
-  //   mail: '',
-  //   msg: '',
-  // }];
-
   const firstName = document.querySelector('#firstname');
   const lastName = document.querySelector('#lastname');
   const comment = document.querySelector('#msg');
+  // Local-Storage
+  // declaring new variables
+  const storage = {
+    fname: '',
+    lname: '',
+    mail: '',
+    msg: '',
+  };
 
   // Form information storing function
   function populateStorage() {
-    localStorage.setItem('fname', firstName.value);
-    localStorage.setItem('lname', lastName.value);
-    localStorage.setItem('mail', email.value);
-    localStorage.setItem('msg', comment.value);
+    storage.fname = firstName.value;
+    storage.lname = lastName.value;
+    storage.mail = email.value;
+    storage.msg = comment.value;
+    localStorage.setItem('data', JSON.stringify(storage));
   }
   // Form completing with storage information
   function getFromStorage() {
-    firstName.value = localStorage.getItem('fname');
-    lastName.value = localStorage.getItem('lname');
-    email.value = localStorage.getItem('mail');
-    comment.value = localStorage.getItem('msg');
+    const retrieve = JSON.parse(localStorage.getItem('data'));
+    firstName.value = retrieve.fname;
+    lastName.value = retrieve.lname;
+    email.value = retrieve.mail;
+    comment.value = retrieve.msg;
   }
 
+  function setDataFirstTime() {
+    if (localStorage.getItem('data') === null) {
+      localStorage.setItem('data', JSON.stringify(storage));
+    }
+  }
+
+  setDataFirstTime();
   getFromStorage();
 
   firstName.addEventListener('input', () => {
