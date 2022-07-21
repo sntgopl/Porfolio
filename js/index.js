@@ -192,4 +192,32 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     showError(email.value);
   });
+
+  //Local-Storage
+  //declaring new variables
+  let storage = [{
+    'fname': '',
+    'lname': '',
+    'mail': '',
+    'msg': '',
+  }]
+
+  const firstName = document.querySelector('#firstname');
+  const lastName = document.querySelector('#lastname');
+  const comment = document.querySelector('#msg');
+
+  //Form information storing function
+  function populateStorage() {
+    localStorage.setItem('fname',firstName.value);
+    localStorage.setItem('lname',lastName.value);
+    localStorage.setItem('mail',email.value);
+    localStorage.setItem('msg',comment.value);
+  }
+  //Form completing with storage information
+  function getFromStorage() {
+    firstName = localStorage.getItem('fname');
+    lastName = localStorage.getItem('lname');
+    email = localStorage.getItem('mail');
+    comment = localStorage.getItem('msg');
+  }
 });
