@@ -797,16 +797,22 @@
     border: 1px solid #ff6b00;
   }
 
-  .error { 
-    width: 100%;
-    font-size: 80%;
+  .alert { 
+    width: 160px;
+    height: 48px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     color: white;
-    background-color: #f52d00;
     border-radius: 5px;
     box-sizing: border-box;
   }
 
-  .active {
-    padding: 5px;
+  .error {
+    background-color: rgba(200, 0, 0, 0.639);
+  }
+
+  .success {
+    background-color: rgba(0, 163, 0, 0.76);
   }
 }

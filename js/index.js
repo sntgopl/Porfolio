@@ -18,9 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const pBtnLive = document.querySelector('#popUpLive');
   const pBtnSource = document.querySelector('#popUpSource');
   const pList = document.querySelector('#popUpList');
-  const form = document.querySelector('#formV');
-  const email = document.querySelector('#email');
-  const emailError = document.querySelector('.error');
 
   const arrProjects = [
     {
@@ -156,28 +153,42 @@ document.addEventListener('DOMContentLoaded', () => {
     projectPup.style.display = 'none';
   });
 
+  // Mail-Validation
+  // define variables
+  const form = document.querySelector('#formV');
+  const email = document.querySelector('#email');
+  const emailError = document.querySelector('.error');
+
+  // function displaying message of succes of fail validation
   function showError(input) {
-    let lower = input.toLowerCase();
-    console.log(input, lower);
-    
-    if(lower != input){
-      emailError.textContent = 'Input value must be in lower case';
-      emailError.className = 'error active';
+    const lower = input.toLowerCase();
+    const pattern = /@+./;
+    // conditional fail or success
+    // fail change text and class
+    if (lower !== input) {
+      emailError.innerText = 'Email input should be in lower case';
+      emailError.className = 'alert error';
       return false;
     }
-    else if(lower == input) {
-      form.submit();
-      emailError.textContent = '';
-      emailError.className = 'error';
-      return true;
+    if (!pattern.test(input)) {
+      emailError.innerText = 'Email input should have @ and .';
+      emailError.className = 'alert error';
+      return false;
     }
+    // true change text and remove class --> submit
+    if (lower === input) {
+      emailError.innerText = 'Thank you for your submit';
+      emailError.className = 'alert success';
+
+      setTimeout(() => {
+        form.submit();
+      },
+      1000);
+    }
+    return true;
   }
 
-  email.addEventListener('input',() =>{
-    showError(email.value);
-  });
-
-  form.addEventListener('submit', (event)=> {
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
     showError(email.value);
   });
