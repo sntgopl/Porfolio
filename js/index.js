@@ -206,6 +206,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const lastName = document.querySelector('#lastname');
   const comment = document.querySelector('#msg');
 
+  firstName.addEventListener('input', () => {
+  });
+
+  lastName.addEventListener('input', () => {
+  });
+
+  comment.addEventListener('input', () => {
+
+  });
+
+  email.addEventListener('input', () => {
+    
+  })
+
   //Form information storing function
   function populateStorage() {
     localStorage.setItem('fname',firstName.value);
