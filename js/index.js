@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lower === input) {
       emailError.innerText = 'Thank you for your submit';
       emailError.className = 'alert success';
-
       setTimeout(() => {
         form.submit();
       },
@@ -191,5 +190,59 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     showError(email.value);
+  });
+
+  const firstName = document.querySelector('#firstname');
+  const lastName = document.querySelector('#lastname');
+  const comment = document.querySelector('#msg');
+  // Local-Storage
+  // declaring new variables
+  const storage = {
+    fname: '',
+    lname: '',
+    mail: '',
+    msg: '',
+  };
+
+  // Form information storing function
+  function populateStorage() {
+    storage.fname = firstName.value;
+    storage.lname = lastName.value;
+    storage.mail = email.value;
+    storage.msg = comment.value;
+    localStorage.setItem('data', JSON.stringify(storage));
+  }
+  // Form completing with storage information
+  function getFromStorage() {
+    const retrieve = JSON.parse(localStorage.getItem('data'));
+    firstName.value = retrieve.fname;
+    lastName.value = retrieve.lname;
+    email.value = retrieve.mail;
+    comment.value = retrieve.msg;
+  }
+
+  function setDataFirstTime() {
+    if (localStorage.getItem('data') === null) {
+      localStorage.setItem('data', JSON.stringify(storage));
+    }
+  }
+
+  setDataFirstTime();
+  getFromStorage();
+
+  firstName.addEventListener('input', () => {
+    populateStorage();
+  });
+
+  lastName.addEventListener('input', () => {
+    populateStorage();
+  });
+
+  comment.addEventListener('input', () => {
+    populateStorage();
+  });
+
+  email.addEventListener('input', () => {
+    populateStorage();
   });
 });
