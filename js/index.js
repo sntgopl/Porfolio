@@ -176,15 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     }
     // true change text and remove class --> submit
-    if (lower === input) {
+    if (lower === input && !pattern.test(input)) {
       emailError.innerText = 'Thank you for your submit';
       emailError.className = 'alert success';
-      if(pattern.test(input)){
       setTimeout(() => {
         form.submit();
       },
       1000);
-    }}
+    }
     return true;
   }
 
