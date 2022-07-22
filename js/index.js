@@ -179,11 +179,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lower === input) {
       emailError.innerText = 'Thank you for your submit';
       emailError.className = 'alert success';
+      if(pattern.test(input)){
       setTimeout(() => {
         form.submit();
       },
       1000);
-    }
+    }}
     return true;
   }
 
